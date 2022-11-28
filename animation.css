@@ -1,0 +1,54 @@
+img {
+    width: 250px;
+    transform: rotateY(120deg);
+    transform: perspective(200px);
+    animation: Enemy;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    animation: text;
+    animation-duration: 3s;
+    animation-iteration-count:infinitet;
+}
+
+@keyframes Enemy {
+    0% {
+        transform:translateY(350px);
+    }
+
+    20% {
+        transform: scaleX(2);
+    }
+
+    40% {
+        transform: skewX(50deg);
+    }
+
+    60% {
+        transform: translateZ(250px);
+    }
+    
+    80% {
+        transform: rotate(1200deg);
+    }
+
+    100% {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes text {
+    from {
+        transform: translateY(300px);
+    }
+
+    to {
+        transform: rotateX(160deg);
+    }
+}
